@@ -5,6 +5,13 @@ from src.mlflow.pipeline.stage_03_data_transformation import DataTransformationT
 from src.mlflow.pipeline.stage_04_model_traner import ModelTrainerTrainingPipeline
 from src.mlflow.pipeline.stage_05_model_evaluation import ModelEvaluationTrainingPipeline
 
+import mlflow
+import dagshub
+
+# Set the tracking URI for MLflow to point to DagsHub
+mlflow.set_tracking_uri("https://dagshub.com/bijaycd/Wine-Quality-Prediction-using-MLfLow.mlflow")
+dagshub.init(repo_owner='bijaycd', repo_name='Wine-Quality-Prediction-using-MLfLow', mlflow=True)
+
 STAGE_NAME = "Data Ingestion stage"
 try:
    logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<") 
