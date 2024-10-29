@@ -77,7 +77,7 @@ dagshub.init(repo_owner='bijaycd', repo_name='Wine-Quality-Prediction-using-MLfL
 
 ## Save pass:
 
-qZV28hdOU8pffBPtYcbN8x2sjOi2Pk5Vb3+ebaUhfL+ACRDy8Z8x
+Save the Azure password in notepad
 
 
 ## Run from terminal:
